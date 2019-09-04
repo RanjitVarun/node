@@ -16,6 +16,7 @@ var server=http.createServer(function (req,res){
       );
        
         res.write("<html><body><p>login page</p></body></html>");
+        res.write(JSON.stringify({ message: "Hello World"}));  
         res.end();
     }
     else if(req.url=='/signup')
